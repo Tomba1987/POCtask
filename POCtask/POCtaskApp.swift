@@ -10,7 +10,6 @@ import Combine
 
 @main
 struct POCtaskApp: App {
-    
     @StateObject var appLauncher = AppLauncher()
     
     var body: some Scene {
@@ -42,7 +41,6 @@ struct POCtaskApp: App {
 }
 
 class AppLauncher: ObservableObject {
-    
     let networkManager = NetworkManager()
     let microAppFactory = MicroAppFactory()
     let cardFactory = CardFactory()
